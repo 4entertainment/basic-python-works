@@ -1,0 +1,12 @@
+Hugging Face – Using Transformers
+Transformer modelleri genellikle oldukça büyüktür. Birkaç milyon ila on milyarlarca parametreye sahip olan bu modellerin eğitimi ve dağıtımı karmaşık bir çabadır.
+
+🤗 Transformers kütüphanesi, bu sorunu çözmek için oluşturuldu. Amacı, herhangi bir Transformer modelinin yüklenebilmesi, eğitilebilmesi ve kaydedilebilmesi için tek bir API sağlamaktır. 
+
+Kütüphanenin temel özellikleri şunlardır:
+Kullanım Kolaylığı: En gelişmiş NLP modelini indirme, yükleme ve çıkarsama için sadece iki satır kod yazmak mümkündür. 
+Esneklik: Tüm modeller basit PyTorch nn.Module veya TensorFlow tf.keras.Model sınıflarıdır ve ilgili makine öğrenimi (ML) çerçevelerindeki diğer modeller gibi işlenebilir. 
+Basitlik: Kütüphane boyunca neredeyse hiçbir soyutlama yapılmamıştır. "Tek dosyada her şey" temel bir kavramdır: bir modelin ileri geçişi tamamen tek bir dosyada tanımlanmıştır, böylece kod kendisi anlaşılır ve değiştirilebilir. Bu son özellik, 🤗 Transformers'ı diğer ML kütüphanelerinden oldukça farklı kılar. Modeller, dosyalar arasında paylaşılan modüller üzerine inşa edilmemiştir; bunun yerine her bir model kendi katmanlara sahiptir. Modelleri daha yaklaşılabilir ve anlaşılır hale getirmenin yanı sıra, bu size bir model üzerinde deney yapmayı diğerlerini etkilemeden kolayca gerçekleştirme olanağı sağlar.
+
+
+
